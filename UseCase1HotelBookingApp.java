@@ -1,10 +1,5 @@
-/**
- * Hotel Booking Management System
- * Use Case 2: Basic Room Types & Static Availability
- *
- * @author Phani
- * @version 2.0
- */
+// UC2: Basic Room Types & Static Availability
+// Version: 2.0
 
 // Abstract class
 abstract class Room {
@@ -46,17 +41,19 @@ class SuiteRoom extends Room {
     }
 }
 
-// Main class (same name as file)
+// Main Class
 public class UseCase1HotelBookingApp {
 
     public static void main(String[] args) {
 
-        System.out.println("===== Book My Stay App (v2.0) =====");
+        System.out.println("=================================");
+        System.out.println("     BOOK MY STAY APP - UC2      ");
+        System.out.println("=================================");
 
         // Polymorphism
-        Room r1 = new SingleRoom();
-        Room r2 = new DoubleRoom();
-        Room r3 = new SuiteRoom();
+        Room single = new SingleRoom();
+        Room doubleRoom = new DoubleRoom();
+        Room suite = new SuiteRoom();
 
         // Static availability
         int singleAvailable = 5;
@@ -65,13 +62,13 @@ public class UseCase1HotelBookingApp {
 
         System.out.println("\n--- Room Details ---\n");
 
-        r1.display();
+        single.display();
         System.out.println("Available: " + singleAvailable + "\n");
 
-        r2.display();
+        doubleRoom.display();
         System.out.println("Available: " + doubleAvailable + "\n");
 
-        r3.display();
+        suite.display();
         System.out.println("Available: " + suiteAvailable + "\n");
 
         System.out.println("Application executed successfully!");
