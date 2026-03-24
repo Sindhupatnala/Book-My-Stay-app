@@ -23,6 +23,7 @@ public class UseCase1HotelBookingApp {
         System.out.println("=================================");
 
         System.out.println("Application started successfully!");
+        System.out.println("UC1 branch update");
 
     }
 } {
