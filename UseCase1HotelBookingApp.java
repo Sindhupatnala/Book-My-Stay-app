@@ -1,31 +1,30 @@
-public /**
- * Hotel Booking Management System
- * Use Case 1: Application Entry & Welcome Message
- *
- * This class represents the entry point of the application.
- * It demonstrates how a Java program starts execution and prints output.
- *
- * @author Phani
- * @version 1.0
- */
-public class UseCase1HotelBookingApp {
 
-    /**
-     * Main method - Entry point of the application
-     * @param args command-line arguments
-     */
-    public static void main(String[] args) {
-
-        // Display welcome message
-        System.out.println("=================================");
-        System.out.println("   Welcome to Book My Stay App   ");
-        System.out.println("        Version 1.0              ");
-        System.out.println("=================================");
-
+ UC1-ApplicationStart
         System.out.println("Application started successfully!");
         System.out.println("UC1 branch update");
 
+        // Polymorphism
+        Room single = new SingleRoom();
+        Room doubleRoom = new DoubleRoom();
+        Room suite = new SuiteRoom();
+
+        // Static availability
+        int singleAvailable = 5;
+        int doubleAvailable = 3;
+        int suiteAvailable = 2;
+        main
+
+        System.out.println("\n--- Room Details ---\n");
+
+        single.displayDetails();
+        System.out.println("Available: " + singleAvailable + "\n");
+
+        doubleRoom.displayDetails();
+        System.out.println("Available: " + doubleAvailable + "\n");
+
+        suite.displayDetails();
+        System.out.println("Available: " + suiteAvailable + "\n");
+
+        System.out.println("Application executed successfully!");
     }
-} {
-    
 }
